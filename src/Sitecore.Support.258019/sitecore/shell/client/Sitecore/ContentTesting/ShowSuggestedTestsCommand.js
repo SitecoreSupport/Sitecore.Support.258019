@@ -39,7 +39,8 @@ define(["sitecore", "loadingImage", "/-/speak/v1/ExperienceEditor/ExperienceEdit
           myItemsButton.append(gif);
         }
       },
-      fillupSuggestedTestsCount(testCount) {
+      // Sitecore.Support.258019
+      fillupSuggestedTestsCount: function (testCount) {
         var outputEl = $("a[data-sc-id='Suggested-Tests'] span");
         var counterSpan = "<span> (" + testCount + ")</span>";
 

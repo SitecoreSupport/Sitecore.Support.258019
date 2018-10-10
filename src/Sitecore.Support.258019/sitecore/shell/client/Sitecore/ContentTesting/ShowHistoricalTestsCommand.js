@@ -46,7 +46,8 @@ define(["sitecore", "loadingImage", "/-/speak/v1/ExperienceEditor/ExperienceEdit
           myItemsButton.append(gif);
         }
       },
-      fillupHistoricalTestsCount(testCount) {
+      // Sitecore.Support.258019
+      fillupHistoricalTestsCount: function (testCount) {
         var outputEl = $("a[data-sc-id='Historical-Tests'] span");
         var counterSpan = "<span> (" + testCount + ")</span>";
 
